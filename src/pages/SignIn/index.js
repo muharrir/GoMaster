@@ -22,15 +22,18 @@ export default function SignIn({navigation}) {
           <ILSignin />
         </View>
         <View style={styles.input}>
-          <TextInput placeholder="Username" />
+          <TextInput placeholder="Username" style={styles.inputText} />
         </View>
         <View style={styles.input}>
-          <TextInput placeholder="Password" />
+          <TextInput placeholder="Password" style={styles.inputText} />
         </View>
         <View style={styles.link}>
           <Link label="Forgot your password?" />
         </View>
-        <Button label="Login" />
+        <Button
+          label="Login"
+          onPress={() => navigation.replace('Categories')}
+        />
         <Text style={styles.text}>or</Text>
         <View style={styles.icon}>
           <IconSocial />
@@ -65,6 +68,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 22,
     marginBottom: 16,
   },
+  inputText: {fontSize: 16, fontFamily: 'Gilroy-Medium', color: '#B0B0C3'},
   link: {
     marginTop: -2,
     alignItems: 'flex-end',

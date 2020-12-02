@@ -1,20 +1,26 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export default function Button({onPress, label}) {
+export default function Button({onPress, label, secondary}) {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Text style={styles.text}>{label}</Text>
+    <TouchableOpacity style={styles.container(secondary)} onPress={onPress}>
+      <Text style={styles.text(secondary)}>{label}</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {padding: 20, backgroundColor: '#20C3AF'},
-  text: {
+  container: (secondary) => ({
+    padding: 20,
+    backgroundColor: secondary ? 'white' : '#20C3AF',
+    borderWidth: 1,
+    borderColor: secondary ? '#E2E2E0' : '#20C3AF',
+    flex: 1,
+  }),
+  text: (secondary) => ({
     fontSize: 16,
     fontFamily: 'Gilroy-SemiBold',
-    color: 'white',
+    color: secondary ? '#838391' : 'white',
     textAlign: 'center',
-  },
+  }),
 });

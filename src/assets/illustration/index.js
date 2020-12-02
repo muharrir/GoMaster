@@ -3,5 +3,13 @@ import ILOnboarding2 from './onboarding2.svg';
 import ILOnboarding3 from './onboarding3.svg';
 import ILOnboarding4 from './onboarding4.svg';
 import ILSignin from './signin.svg';
+import ILSignup from './signup.svg';
 
-export {ILOnboarding1, ILOnboarding2, ILOnboarding3, ILOnboarding4, ILSignin};
+export {
+  ILOnboarding1,
+  ILOnboarding2,
+  ILOnboarding3,
+  ILOnboarding4,
+  ILSignin,
+  ILSignup,
+};
