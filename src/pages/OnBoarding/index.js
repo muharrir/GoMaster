@@ -9,12 +9,11 @@ import {
   ILOnboarding4,
 } from '../../assets';
 
-export default function OnBoarding() {
+export default function OnBoarding({navigation}) {
   return (
     <Swiper
       index={0}
       loop={false}
-      onIndexChanged={(index) => null}
       style={styles.wrapper}
       dotStyle={{
         backgroundColor: '#CBD3D5',
@@ -49,7 +48,7 @@ export default function OnBoarding() {
           </Text>
         </View>
         <View style={styles.btn}>
-          <Button />
+          <Button label="Next" />
         </View>
       </View>
 
@@ -66,7 +65,7 @@ export default function OnBoarding() {
           </Text>
         </View>
         <View style={styles.btn}>
-          <Button />
+          <Button label="Next" />
         </View>
       </View>
 
@@ -83,7 +82,7 @@ export default function OnBoarding() {
           </Text>
         </View>
         <View style={styles.btn}>
-          <Button />
+          <Button label="Next" />
         </View>
       </View>
 
@@ -98,7 +97,7 @@ export default function OnBoarding() {
           <Text style={styles.text2}>It's easy, just click on the plus </Text>
         </View>
         <View style={styles.btnCircle}>
-          <ButtonCircle />
+          <ButtonCircle onPress={() => navigation.replace('SignIn')} />
         </View>
       </View>
     </Swiper>

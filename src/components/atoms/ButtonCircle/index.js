@@ -1,12 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {ICPlus} from '../../../assets';
 
-export default function ButtonCircle() {
+export default function ButtonCircle({onPress}) {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <ICPlus />
-    </View>
+    </TouchableOpacity>
   );
 }
 

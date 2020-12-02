@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export default function Button({label}) {
+export default function Button({onPress, label}) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Next</Text>
-    </View>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
+      <Text style={styles.text}>{label}</Text>
+    </TouchableOpacity>
   );
 }
 
