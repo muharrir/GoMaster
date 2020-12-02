@@ -1,7 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {Categories, OnBoarding, SignIn, SignUp} from '../pages';
+import {Categories, OnBoarding, SignIn, SignUp, Profile} from '../pages';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +26,11 @@ export default function Router() {
       <Stack.Screen
         name="Categories"
         component={Categories}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

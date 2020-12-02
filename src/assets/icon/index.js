@@ -10,6 +10,9 @@ import ICTools from './icon-tools.svg';
 import ICBox from './icon-box.svg';
 import ICInterior from './icon-interior.svg';
 import ICNext from './icon-next.svg';
+import ICTelpon from './icon-telpon.svg';
+import ICMail from './icon-mail.svg';
+import ICCircle from './icon-circle.svg';
 
 export {
   ICPlus,
@@ -24,4 +27,7 @@ export {
   ICBox,
   ICInterior,
   ICNext,
+  ICTelpon,
+  ICMail,
+  ICCircle,
 };

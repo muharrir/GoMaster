@@ -1,3 +1,5 @@
 import Header from './Header';
+import CategoryItem from './CategoryItem';
+import ProfileItem from './ProfileItem';
 
-export {Header};
+export {Header, CategoryItem, ProfileItem};

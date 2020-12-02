@@ -20,9 +20,13 @@ export default function Categories({navigation}) {
         <CategoryItem icon="box" label="Courier services" />
         <CategoryItem icon="interior" label="Interior design" />
         <View style={styles.btn}>
-          <Button secondary label="Back" style={styles.btnback} />
+          <Button secondary double label="Back" style={styles.btnback} />
           <Gap width={15} />
-          <Button label="Next" />
+          <Button
+            double
+            label="Next"
+            onPress={() => navigation.navigate('Profile')}
+          />
         </View>
       </View>
     </View>
