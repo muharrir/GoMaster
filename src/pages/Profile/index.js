@@ -3,7 +3,7 @@ import {Image, StyleSheet, Text, View} from 'react-native';
 import {DummyProfile} from '../../assets';
 import {Button, Dot, Gap, Header, Link, ProfileItem} from '../../components';
 
-export default function Profile() {
+export default function Profile({navigation}) {
   return (
     <View style={styles.page}>
       <Header />
@@ -20,7 +20,11 @@ export default function Profile() {
       <View style={styles.btn}>
         <Button secondary double label="About Me" />
         <Gap width={15} />
-        <Button double label="Reviews" />
+        <Button
+          double
+          label="Reviews"
+          onPress={() => navigation.navigate('Notification')}
+        />
       </View>
       <View style={styles.wrapperItem}>
         <ProfileItem icon="telpon" label="Phone number" desc="+3746589923" />

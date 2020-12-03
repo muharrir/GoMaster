@@ -1,4 +1,5 @@
 import ICPlus from './icon-plus.svg';
+import ICPlusBlack from './icon-plus-black.svg';
 import ICBack from './icon-back.svg';
 import ICHamburger from './icon-hamburger.svg';
 import ICFacebook from './icon-fb.svg';
@@ -13,9 +14,11 @@ import ICNext from './icon-next.svg';
 import ICTelpon from './icon-telpon.svg';
 import ICMail from './icon-mail.svg';
 import ICCircle from './icon-circle.svg';
+import ICCheck from './icon-check';
 
 export {
   ICPlus,
+  ICPlusBlack,
   ICBack,
   ICHamburger,
   ICFacebook,
@@ -30,4 +33,5 @@ export {
   ICTelpon,
   ICMail,
   ICCircle,
+  ICCheck,
 };

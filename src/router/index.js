@@ -1,9 +1,30 @@
 import {createStackNavigator} from '@react-navigation/stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {Categories, OnBoarding, SignIn, SignUp, Profile} from '../pages';
+import {
+  Categories,
+  OnBoarding,
+  SignIn,
+  SignUp,
+  Profile,
+  Setting,
+  DrawerContent,
+  Notification,
+  OrderInProgress,
+  ConstructionWorks,
+} from '../pages';
 
+const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
+
+const MainApp = () => {
+  return (
+    <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props} />}>
+      <Drawer.Screen name="Category" component={Category} />
+    </Drawer.Navigator>
+  );
+};
 
 export default function Router() {
   return (
@@ -24,6 +45,11 @@ export default function Router() {
         options={{headerShown: false}}
       />
       <Stack.Screen
+        name="MainApp"
+        component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
         name="Categories"
         component={Categories}
         options={{headerShown: false}}
@@ -31,6 +57,26 @@ export default function Router() {
       <Stack.Screen
         name="Profile"
         component={Profile}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Notification"
+        component={Notification}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="OrderInProgress"
+        component={OrderInProgress}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ConstructionWorks"
+        component={ConstructionWorks}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Setting"
+        component={Setting}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
