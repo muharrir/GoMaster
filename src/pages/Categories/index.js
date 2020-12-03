@@ -14,26 +14,28 @@ export default function Categories({navigation}) {
             style={styles.inputText}
           />
         </View>
-        <CategoryItem icon="furniture" label="Furniture works" />
-        <CategoryItem icon="sapu" label="Cleaning services" />
-        <CategoryItem icon="tools" label="Equipment repair" />
-        <CategoryItem icon="box" label="Courier services" />
-        <CategoryItem icon="interior" label="Interior design" />
-        <View style={styles.btn}>
-          <Button
-            secondary
-            double
-            label="Back"
-            style={styles.btnback}
-            onPress={() => navigation.replace('Profile')}
-          />
-          <Gap width={15} />
-          <Button
-            double
-            label="Next"
-            onPress={() => navigation.replace('OrderInProgress')}
-          />
+        <View>
+          <CategoryItem icon="furniture" label="Furniture works" />
+          <CategoryItem icon="sapu" label="Cleaning services" />
+          <CategoryItem icon="tools" label="Equipment repair" />
+          <CategoryItem icon="box" label="Courier services" />
+          <CategoryItem icon="interior" label="Interior design" />
         </View>
+      </View>
+      <View style={styles.btn}>
+        <Button
+          secondary
+          double
+          label="Back"
+          style={styles.btnback}
+          onPress={() => navigation.replace('Profile')}
+        />
+        <Gap width={15} />
+        <Button
+          double
+          label="Next"
+          onPress={() => navigation.replace('OrderInProgress')}
+        />
       </View>
     </View>
   );
@@ -41,7 +43,11 @@ export default function Categories({navigation}) {
 
 const styles = StyleSheet.create({
   page: {backgroundColor: 'white', flex: 1},
-  content: {marginHorizontal: 30, paddingTop: 21},
+  content: {
+    flex: 1,
+    marginHorizontal: 30,
+    paddingTop: 21,
+  },
   input: {
     backgroundColor: '#F7F7F7',
     paddingVertical: 21,
@@ -51,6 +57,7 @@ const styles = StyleSheet.create({
   inputText: {fontSize: 16, fontFamily: 'Gilroy-Medium', color: '#B0B0C3'},
   btn: {
     flexDirection: 'row',
-    marginTop: 42,
+    paddingBottom: 40,
+    paddingHorizontal: 30,
   },
 });

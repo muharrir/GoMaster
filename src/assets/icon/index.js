@@ -14,7 +14,9 @@ import ICNext from './icon-next.svg';
 import ICTelpon from './icon-telpon.svg';
 import ICMail from './icon-mail.svg';
 import ICCircle from './icon-circle.svg';
-import ICCheck from './icon-check';
+import ICCheck from './icon-check.svg';
+import ICStar from './icon-star.svg';
+import ICStarDisable from './icon-star-disable.svg';
 
 export {
   ICPlus,
@@ -34,4 +36,6 @@ export {
   ICMail,
   ICCircle,
   ICCheck,
+  ICStar,
+  ICStarDisable,
 };

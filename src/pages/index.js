@@ -8,6 +8,8 @@ import DrawerContent from './DrawerContent';
 import Notification from './Notification';
 import OrderInProgress from './OrderInProgress';
 import ConstructionWorks from './ConstructionWorks';
+import PaymentService from './PaymentService';
+import CustomerInfo from './CustomerInfo';
 
 export {
   OnBoarding,
@@ -20,4 +22,6 @@ export {
   Notification,
   OrderInProgress,
   ConstructionWorks,
+  PaymentService,
+  CustomerInfo,
 };

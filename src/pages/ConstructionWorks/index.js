@@ -3,7 +3,7 @@ import {StyleSheet, Text, TextInput, View} from 'react-native';
 import {Button, ConstructionItem, Gap, Header} from '../../components';
 import {ICPlusBlack} from '../../assets';
 
-export default function ConstructionWorks() {
+export default function ConstructionWorks({navigation}) {
   return (
     <View style={styles.page}>
       <Header label="Construction works" />
@@ -26,7 +26,11 @@ export default function ConstructionWorks() {
       <View style={styles.btn}>
         <Button secondary double label="Skip" />
         <Gap width={15} />
-        <Button double label="Done" />
+        <Button
+          double
+          label="Done"
+          onPress={() => navigation.navigate('PaymentService')}
+        />
       </View>
     </View>
   );

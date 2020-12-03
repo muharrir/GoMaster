@@ -13,6 +13,8 @@ import {
   Notification,
   OrderInProgress,
   ConstructionWorks,
+  PaymentService,
+  CustomerInfo,
 } from '../pages';
 
 const Drawer = createDrawerNavigator();
@@ -72,6 +74,16 @@ export default function Router() {
       <Stack.Screen
         name="ConstructionWorks"
         component={ConstructionWorks}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PaymentService"
+        component={PaymentService}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CustomerInfo"
+        component={CustomerInfo}
         options={{headerShown: false}}
       />
       <Stack.Screen

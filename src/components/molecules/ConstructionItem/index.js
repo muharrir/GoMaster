@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {ICCheck, ICPlusBlack} from '../../../assets';
 
-export default function ConstructionItem({type, disable, label}) {
+export default function ConstructionItem({type, disable, label, onPress}) {
   const Icon = () => {
     if (type === 'disable') {
       return <ICPlusBlack />;
@@ -14,9 +14,9 @@ export default function ConstructionItem({type, disable, label}) {
       <View>
         <Text style={styles.text(disable)}>{label}</Text>
       </View>
-      <View style={styles.box(disable)}>
+      <TouchableOpacity style={styles.box(disable)} onPress={onPress}>
         <Icon />
-      </View>
+      </TouchableOpacity>
     </View>
   );
 }
