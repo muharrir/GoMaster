@@ -17,6 +17,8 @@ import ICCircle from './icon-circle.svg';
 import ICCheck from './icon-check.svg';
 import ICStar from './icon-star.svg';
 import ICStarDisable from './icon-star-disable.svg';
+import ICVisa from './icon-visa.svg';
+import ICMastercard from './icon-mastercard';
 
 export {
   ICPlus,
@@ -38,4 +40,6 @@ export {
   ICCheck,
   ICStar,
   ICStarDisable,
+  ICVisa,
+  ICMastercard,
 };

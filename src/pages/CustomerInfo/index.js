@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import {ICStar, ICStarDisable} from '../../assets';
 import {CustomerItem, Gap, Header, Link} from '../../components';
 
-export default function CustomerInfo() {
+export default function CustomerInfo({navigation}) {
   return (
     <View style={styles.page}>
       <Header label="Customer Info" />
@@ -33,7 +33,11 @@ export default function CustomerInfo() {
             professionalism and quality of my services.
           </Text>
         </View>
-        <Link active label="Read more" />
+        <Link
+          active
+          label="Read more"
+          onPress={() => navigation.navigate('Setting')}
+        />
       </View>
     </View>
   );

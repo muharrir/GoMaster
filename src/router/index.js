@@ -15,6 +15,8 @@ import {
   ConstructionWorks,
   PaymentService,
   CustomerInfo,
+  PaymentsCard,
+  PaymentsCard2,
 } from '../pages';
 
 const Drawer = createDrawerNavigator();
@@ -89,6 +91,16 @@ export default function Router() {
       <Stack.Screen
         name="Setting"
         component={Setting}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PaymentsCard"
+        component={PaymentsCard}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PaymentsCard2"
+        component={PaymentsCard2}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

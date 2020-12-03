@@ -10,6 +10,8 @@ import OrderInProgress from './OrderInProgress';
 import ConstructionWorks from './ConstructionWorks';
 import PaymentService from './PaymentService';
 import CustomerInfo from './CustomerInfo';
+import PaymentsCard from './PaymentsCard';
+import PaymentsCard2 from './PaymentsCard2';
 
 export {
   OnBoarding,
@@ -24,4 +26,6 @@ export {
   ConstructionWorks,
   PaymentService,
   CustomerInfo,
+  PaymentsCard,
+  PaymentsCard2,
 };
